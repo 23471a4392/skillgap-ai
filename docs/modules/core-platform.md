@@ -14,3 +14,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #003: Scaffolding containerized SQLite and local environment services
+- **Branch**: `feature/core-platform-docker-compose-infra`
+- **Module**: Core Platform & Infrastructure
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
