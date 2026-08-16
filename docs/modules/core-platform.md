@@ -86,3 +86,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #015: Define User, RefreshToken, and Session database models with cascade rules
+- **Branch**: `feature/core-platform-user-account-schema`
+- **Module**: Core Platform & Infrastructure
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
