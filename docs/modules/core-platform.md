@@ -92,3 +92,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #016: Define Profile, ContactInfo, and SocialLinks models and relational indexes
+- **Branch**: `feature/core-platform-profile-contact-schema`
+- **Module**: Core Platform & Infrastructure
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
