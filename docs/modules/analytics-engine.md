@@ -38,3 +38,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #028: Calculate candidate job readiness score based on target role requirements
+- **Branch**: `feature/analytics-engine-weighted-readiness-engine`
+- **Module**: Skill Gap Analytics & Readiness Engine
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
