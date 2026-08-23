@@ -56,3 +56,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #031: Compute overall career match percentage against benchmark profiles
+- **Branch**: `feature/analytics-engine-career-match-percentage`
+- **Module**: Skill Gap Analytics & Readiness Engine
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
