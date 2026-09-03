@@ -74,3 +74,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #055: Extract hiring companies, job titles, and employment date intervals
+- **Branch**: `feature/resume-parser-company-role-extractor`
+- **Module**: Deterministic Resume Entity Parser
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
