@@ -122,3 +122,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #063: Vitest test suite verifying sample resumes, edge cases, and missing fields
+- **Branch**: `feature/resume-parser-parser-unit-test-suite`
+- **Module**: Deterministic Resume Entity Parser
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
