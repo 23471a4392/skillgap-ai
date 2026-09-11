@@ -50,3 +50,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #072: Create dedicated /mobile-upload/:token responsive mobile web view
+- **Branch**: `feature/mobile-qr-sync-mobile-upload-route`
+- **Module**: Mobile QR Sync & LAN Auto-Discovery
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
