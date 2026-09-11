@@ -56,3 +56,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #073: Validate token authenticity and prevent expired session submissions
+- **Branch**: `feature/mobile-qr-sync-mobile-token-validator`
+- **Module**: Mobile QR Sync & LAN Auto-Discovery
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
