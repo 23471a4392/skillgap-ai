@@ -74,3 +74,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #076: Mobile input field with validation for GitHub profile URL
+- **Branch**: `feature/mobile-qr-sync-github-url-input`
+- **Module**: Mobile QR Sync & LAN Auto-Discovery
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
