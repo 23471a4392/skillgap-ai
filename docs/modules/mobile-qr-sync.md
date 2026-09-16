@@ -110,3 +110,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #082: Display clear Wi-Fi instructions for local phone testing
+- **Branch**: `feature/mobile-qr-sync-network-setup-guidance`
+- **Module**: Mobile QR Sync & LAN Auto-Discovery
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
