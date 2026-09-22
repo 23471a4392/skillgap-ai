@@ -68,3 +68,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #096: Build candidate overview dashboard with readiness score and metrics
+- **Branch**: `feature/ui-frontend-candidate-dashboard-view`
+- **Module**: Terracotta & Ivory UI Design System
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
