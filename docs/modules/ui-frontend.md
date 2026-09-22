@@ -74,3 +74,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #097: Build Resume page with Paste Resume content textarea and parse trigger
+- **Branch**: `feature/ui-frontend-resume-editor-page`
+- **Module**: Terracotta & Ivory UI Design System
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
