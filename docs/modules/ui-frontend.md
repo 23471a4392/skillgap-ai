@@ -122,3 +122,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #105: Build account settings view with JSON profile data export and theme rules
+- **Branch**: `feature/ui-frontend-settings-data-management`
+- **Module**: Terracotta & Ivory UI Design System
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
