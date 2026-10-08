@@ -38,3 +38,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #070: React countdown hook managing 10-minute live expiry countdown
+- **Branch**: `feature/mobile-qr-sync-countdown-timer-hook`
+- **Module**: Mobile QR Sync & LAN Auto-Discovery
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
