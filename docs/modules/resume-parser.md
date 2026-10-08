@@ -44,3 +44,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #050: Extract universities, engineering colleges, and academic institutions
+- **Branch**: `feature/resume-parser-institution-name-extractor`
+- **Module**: Deterministic Resume Entity Parser
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
