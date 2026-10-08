@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "test": "npx vitest run --root ../.. tests",
     "preview": "vite preview"
   },
   "dependencies": {
