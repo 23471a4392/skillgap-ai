@@ -98,3 +98,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #017: Implement candidate registration endpoint with bcrypt salt hashing
+- **Branch**: `feature/core-platform-auth-register-controller`
+- **Module**: Core Platform & Infrastructure
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
