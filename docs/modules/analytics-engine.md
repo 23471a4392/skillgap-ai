@@ -20,3 +20,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #025: Define 5-tier skill proficiency scoring criteria and weights
+- **Branch**: `feature/analytics-engine-proficiency-rubric-levels`
+- **Module**: Skill Gap Analytics & Readiness Engine
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
