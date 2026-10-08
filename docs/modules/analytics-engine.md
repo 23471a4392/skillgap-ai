@@ -110,3 +110,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #041: Aggregate commonly required skills across evaluated target roles
+- **Branch**: `feature/analytics-engine-skill-frequency-heatmap`
+- **Module**: Skill Gap Analytics & Readiness Engine
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
