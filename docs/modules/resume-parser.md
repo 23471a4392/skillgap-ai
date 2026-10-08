@@ -116,3 +116,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #062: Sync parsed resume entities directly into candidate profile database
+- **Branch**: `feature/resume-parser-profile-sync-controller`
+- **Module**: Deterministic Resume Entity Parser
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
