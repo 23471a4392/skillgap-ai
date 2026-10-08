@@ -56,3 +56,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #094: Build reusable accessible Modal and Dialog primitives with backdrop blur
+- **Branch**: `feature/ui-frontend-modal-dialog-primitives`
+- **Module**: Terracotta & Ivory UI Design System
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
