@@ -86,3 +86,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #057: Associate detected technical skills to specific portfolio projects
+- **Branch**: `feature/resume-parser-tech-stack-tag-extractor`
+- **Module**: Deterministic Resume Entity Parser
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
