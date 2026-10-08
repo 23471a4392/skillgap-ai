@@ -92,3 +92,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #037: Compute comparative readiness across multiple benchmark career targets
+- **Branch**: `feature/analytics-engine-multi-role-comparison`
+- **Module**: Skill Gap Analytics & Readiness Engine
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
