@@ -1,0 +1,249 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           String        @id @default(uuid())
+  email        String        @unique
+  passwordHash String
+  name         String
+  role         String        @default("user")
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  profile      Profile?
+  sessions     Session[]
+  analyses     JobAnalysisRecord[]
+  roadmaps     RoadmapRecord[]
+  progressLogs ProgressLogRecord[]
+  applications JobApplicationRecord[]
+  qrSessions   QRUploadSession[]
+}
+
+model Session {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  userAgent String?
+  ipAddress String?
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model Profile {
+  id             String          @id @default(uuid())
+  userId         String          @unique
+  user           User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  headline       String?
+  location       String?
+  phone          String?
+  degree         String?
+  branch         String?
+  graduationYear Int?
+  cgpa           String?
+  targetRoleId   String?
+  githubUrl      String?
+  linkedinUrl    String?
+  portfolioUrl   String?
+  bio            String?
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+
+  skills         UserSkill[]
+  education      Education[]
+  experience     Experience[]
+  projects       Project[]
+  certifications Certification[]
+}
+
+model UserSkill {
+  id           String   @id @default(uuid())
+  profileId    String
+  profile      Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  skillName    String
+  category     String
+  proficiency  String   // beginner, elementary, intermediate, advanced, expert
+  yearsOfExp   Float    @default(1.0)
+  lastUsedYear Int?
+  verified     Boolean  @default(false)
+  createdAt    DateTime @default(now())
+
+  @@index([profileId])
+}
+
+model Education {
+  id           String   @id @default(uuid())
+  profileId    String
+  profile      Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  institution  String
+  degree       String
+  fieldOfStudy String
+  startYear    Int
+  endYear      Int?
+  grade        String?
+  isCurrent    Boolean  @default(false)
+  description  String?
+  createdAt    DateTime @default(now())
+
+  @@index([profileId])
+}
+
+model Experience {
+  id           String   @id @default(uuid())
+  profileId    String
+  profile      Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  company      String
+  role         String
+  location     String?
+  startDate    String
+  endDate      String?
+  isCurrent    Boolean  @default(false)
+  isInternship Boolean  @default(false)
+  description  String
+  skillsUsed   String   // JSON stringified array of strings
+  createdAt    DateTime @default(now())
+
+  @@index([profileId])
+}
+
+model Project {
+  id          String   @id @default(uuid())
+  profileId   String
+  profile     Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  title       String
+  description String
+  repoUrl     String?
+  liveUrl     String?
+  complexity  String   @default("Intermediate")
+  skillsUsed  String   // JSON stringified array
+  highlights  String   // JSON stringified array
+  createdAt   DateTime @default(now())
+
+  @@index([profileId])
+}
+
+model Certification {
+  id            String   @id @default(uuid())
+  profileId     String
+  profile       Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  name          String
+  issuingOrg    String
+  issueDate     String
+  expiryDate    String?
+  credentialId  String?
+  credentialUrl String?
+  skillsCovered String   // JSON stringified array
+  createdAt     DateTime @default(now())
+
+  @@index([profileId])
+}
+
+model JobAnalysisRecord {
+  id                     String   @id @default(uuid())
+  userId                 String
+  user                   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  jobTitle               String
+  company                String
+  location               String?
+  rawJobDescription      String
+  targetRoleId           String?
+  overallScore           Int
+  potentialScore         Int
+  technicalScore         Int
+  experienceScore        Int
+  educationScore         Int
+  softSkillsScore        Int
+  projectScore           Int
+  keywordMatchScore      Int
+  verdict                String
+  summaryReason          String
+  matchedSkillsJson      String
+  missingSkillsJson      String
+  partialGapsJson        String
+  recommendedActionsJson String
+  weightsUsedJson        String
+  createdAt              DateTime @default(now())
+
+  @@index([userId])
+}
+
+model RoadmapRecord {
+  id                 String   @id @default(uuid())
+  userId             String
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  analysisId         String?
+  title              String
+  targetRole         String
+  totalWeeks         Int
+  estimatedHours     Int
+  status             String   @default("active")
+  progressPercentage Int      @default(0)
+  milestonesJson     String
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model ProgressLogRecord {
+  id            String   @id @default(uuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  activityType  String
+  description   String
+  hoursSpent    Float
+  completedItem String
+  scoreDelta    Int?
+  createdAt     DateTime @default(now())
+
+  @@index([userId])
+}
+
+model JobApplicationRecord {
+  id           String    @id @default(uuid())
+  userId       String
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  company      String
+  jobTitle     String
+  location     String?
+  salaryRange  String?
+  status       String    @default("wishlist")
+  jobUrl       String?
+  notes        String?
+  appliedDate  String?
+  lastFollowUp String?
+  analysisId   String?
+  matchScore   Int?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([userId])
+}
+
+model QRUploadSession {
+  id             String    @id @default(uuid())
+  secureToken    String    @unique
+  status         String    @default("PENDING") // PENDING, COMPLETED, EXPIRED
+  desktopUserId  String
+  user           User      @relation(fields: [desktopUserId], references: [id], onDelete: Cascade)
+  resumeFileName String?
+  resumeText     String?
+  githubUrl      String?
+  linkedinUrl    String?
+  portfolioUrl   String?
+  skillsCount    Int       @default(0)
+  createdAt      DateTime  @default(now())
+  expiresAt      DateTime
+  completedAt    DateTime?
+
+  @@index([desktopUserId])
+  @@index([secureToken])
+}

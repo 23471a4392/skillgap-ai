@@ -1,0 +1,33 @@
+# Dockerfile for SkillGap AI Backend API
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+# Copy root workspace configs
+COPY package.json package-lock.json* ./
+COPY packages/ ./packages/
+COPY apps/api/ ./apps/api/
+COPY database/ ./database/
+
+RUN npm install
+
+# Generate Prisma Client
+RUN npm run db:generate
+
+# Build API
+RUN npm run build --workspace=@skillgap/api
+
+# Runner stage
+FROM node:20-alpine AS runner
+WORKDIR /app
+ENV NODE_ENV=production
+
+COPY --from=builder /app/package.json ./
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/packages ./packages
+COPY --from=builder /app/database ./database
+COPY --from=builder /app/apps/api ./apps/api
+
+EXPOSE 5000
+
+CMD ["node", "apps/api/dist/index.js"]

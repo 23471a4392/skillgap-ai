@@ -1,0 +1,30 @@
+{
+  "name": "skillgap-ai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SkillGap AI - Know where you stand. Know what to learn next.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "db:generate": "npm run db:generate --workspace=apps/api",
+    "db:push": "npm run db:push --workspace=apps/api",
+    "db:seed": "npm run db:seed --workspace=apps/api"
+  },
+  "keywords": [
+    "skillgap",
+    "career",
+    "skills",
+    "job-readiness",
+    "learning-roadmap"
+  ],
+  "author": "SkillGap AI Team",
+  "license": "MIT"
+}
