@@ -62,3 +62,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #011: Centralized unhandled error, rejected promise, and exception middleware
+- **Branch**: `feature/core-platform-global-error-interceptor`
+- **Module**: Core Platform & Infrastructure
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
