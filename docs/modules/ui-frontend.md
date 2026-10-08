@@ -80,3 +80,9 @@ Technical architecture, module specifications, and pull request milestones for *
 - **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
 - **Status**: Fully Implemented & Unit Verified
 
+### PR #098: Build structured preview cards for Education, Skills, and Projects
+- **Branch**: `feature/ui-frontend-parsed-preview-cards`
+- **Module**: Terracotta & Ivory UI Design System
+- **Lead Engineer**: Nagaphanisree Meesala (`23471a4392@gmail.com`)
+- **Status**: Fully Implemented & Unit Verified
+
